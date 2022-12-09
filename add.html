@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert</title>
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <div class="mainContiner">
+        <div>
+            <input type="text">
+            <button>Get</button>
+        </div>
+        <h3>Result:</h3>
+    </div>
+
+    <script>
+        let input= document.querySelector('input');
+        let btn= document.querySelector('button');
+        let result = document.querySelector('h3');
+        btn.addEventListener('click',()=>{
+            let user = +input.value;
+            result.innerText = `${typeof user} ${user}`
+        })
+        //this is exponentiation
+       
+    </script>
+</body>
+</html>
